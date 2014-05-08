@@ -1,2 +1,2 @@
-bootModal
+Boot Modal
 ==========
