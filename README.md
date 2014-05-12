@@ -19,6 +19,38 @@ This project continues to evolve as I attempt to add additional features and imp
 <a href="http://knockoutjs.com/" title="Knockout.js">Knockout</a> [optional]<br />
 
 
+<h2>Examples</h2>
+<code>
+  var dlg = new BootModal({
+    title: 'Delete Item',
+    content: 'Are you sure you want to delete this item?'
+    buttons: {
+      Ok: {
+        class: 'btn btn-primary',
+        callback: function(evt, results) {
+          //handle ok event
+        }
+      },
+      Cancel: {
+        class: 'btn btn-default',
+        callback: function(evt, results) {
+          // handle cancel event
+        }
+      }
+    }
+  });
+  
+  or
+  
+  BootModal.Confirm({
+    title: 'Delete Item',
+    content: 'Are you sure you want to delete this item?'
+  }, function(success, results) {
+    //handle close callback
+  });
+</code>
+
+
 <h2>Future Updates</h2>
 
 Knockout validation<br />
