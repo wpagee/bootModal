@@ -20,7 +20,7 @@ This project continues to evolve as I attempt to add additional features and imp
 
 
 <h2>Examples</h2>
-<code>
+<pre>
   var dlg = new BootModal({
     title: 'Delete Item',
     content: 'Are you sure you want to delete this item?'
@@ -48,7 +48,7 @@ This project continues to evolve as I attempt to add additional features and imp
   }, function(success, results) {
     //handle close callback
   });
-</code>
+</pre>
 
 
 <h2>Future Updates</h2>
