@@ -20,6 +20,25 @@ This project continues to evolve as I attempt to add additional features and imp
 
 
 <h2>Examples</h2>
+
+By default modals have a ok and cancel button. Once the buttons are triggered a callback will be fired once the modal has closed with two arguments a success {boolean} and results {object}. You can override the buttons with object in one of tow ways.<br />
+
+<pre>
+buttons: {
+    'Accept Button': {
+      class: 'btn btn-primary',
+      callback: function(evt, results) {
+        //handle ok event
+      }
+    },
+    Cancel: {
+      callback: function(evt, results) {
+        // handle cancel event
+      }
+    }
+  }
+</pre>
+
 <pre>
   var dlg = new BootModal({
     title: 'Delete Item',
